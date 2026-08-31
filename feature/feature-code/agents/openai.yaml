@@ -1,0 +1,4 @@
+interface:
+  display_name: "功能开发"
+  short_description: "根据功能任务规划完成代码实现，并保留充分且可追溯的验证结果"
+  default_prompt: "使用 $feature-code 实现并验证指定功能任务。"

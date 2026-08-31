@@ -1,0 +1,4 @@
+interface:
+  display_name: "功能文档"
+  short_description: "为指定功能澄清已有与未决事项并生成包含验收标准的功能文档"
+  default_prompt: "使用 $feature-document 为指定功能完成决策并生成包含验收标准的功能文档。"
