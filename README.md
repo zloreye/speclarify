@@ -4,6 +4,16 @@
 
 Speclarify 是一套以规范文档驱动的 AI 开发工作流 Skill 集，名字由 spec（规范文档）与 clarify（澄清）组合而成，对应它的两大支柱：文档驱动与逐项澄清。整个流程从项目规划到功能落地分成若干个环节，每个环节由一个 Skill 负责：决策由人逐项确认，事实由 AI 自行查证，产出统一落在目标项目的 specs/ 目录中，并通过验收标准编号和文档引用保持全程可追溯。
 
+## 安装
+
+使用 [skills](https://github.com/vercel-labs/skills) 命令一键安装，支持 Claude Code、Codex、Cursor 等主流 AI 编程工具：
+
+```bash
+npx skills add zloreye/speclarify
+```
+
+运行后按提示选择要安装的 Skill 和目标工具即可。
+
 ## 使用建议
 
 使用 Speclarify 时，建议搭配顶级模型以获得最佳体验，例如 Claude Fable 5、Claude Opus 5、ChatGPT 5.6 Sol 等。模型能力越强，使用体验通常也会越好。
