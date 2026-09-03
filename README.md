@@ -30,7 +30,8 @@ npx skills add zloreye/speclarify
 ```
 speclarify/
 ├── common/                  通用 Skill
-│   └── clarify/
+│   ├── clarify/
+│   └── explain/
 ├── feature/                 功能阶段 Skill
 │   ├── feature-document/
 │   ├── feature-design/
@@ -88,6 +89,7 @@ feature-document → feature-design → feature-plan → feature-code
 | 名称                | 阶段  | 作用                        | 输入                           | 产出         |
 | ----------------- | --- | ------------------------- | ---------------------------- | ---------- |
 | clarify           | 通用  | 逐项提问直到达成共同理解，每次一个问题并附推荐答案 | 当前环节的未决或冲突决策                 | 共同理解       |
+| explain           | 通用  | 把文档转换成分层渐进的 HTML 讲解页面，降低阅读负担 | 要讲解的文档及其关联文档                 | HTML 讲解页面（临时生成，不入库） |
 | project-document  | 项目  | 把共同理解沉淀为项目文档              | clarify 达成的共同理解              | 项目文档.md    |
 | project-tech      | 项目  | 完成技术选型                    | 项目文档.md                      | 技术栈.md     |
 | project-structure | 项目  | 确定项目结构                    | 项目文档.md、技术栈.md               | 项目结构.md    |
