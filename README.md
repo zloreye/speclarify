@@ -69,9 +69,9 @@ specs/
 
 ### 项目阶段
 
-clarify → project-document → project-tech → project-structure → project-roadmap
+project-document → project-tech → project-structure → project-roadmap
 
-1. 通过 clarify 就项目整体达成共同理解，用 project-document 生成项目文档。
+1. project-document 以生成项目文档为目标，通过 clarify 就项目整体达成共同理解，生成项目文档。
 2. project-tech 读取项目文档，沿用已确认的技术决策，补齐未决选型，生成技术栈文档，并把项目文档中已迁移的技术选型替换为引用。
 3. project-structure 读取项目文档和技术栈，确定目录与模块划分，生成项目结构文档。
 4. project-roadmap 读取前三份文档，生成开发路线图：覆盖全部开发范围，区分 MVP（最小可用版本）与后续任务，按依赖关系排序，优先以可验证的用户行为组织垂直切片，并包含项目初始化任务。
@@ -92,7 +92,7 @@ feature-document → feature-design → feature-plan → feature-code
 | clarify           | 通用  | 逐项提问直到达成共同理解，每次一个问题并附推荐答案 | 当前环节的未决或冲突决策                 | 共同理解       |
 | explain           | 通用  | 把文档转换成分层渐进的 HTML 讲解页面，降低阅读负担 | 要讲解的文档及其关联文档                 | HTML 讲解页面（临时生成，不入库） |
 | retitle           | 通用  | 按统一格式批量重命名当前项目下的对话标题，先预览再执行 | 当前项目下的对话及其创建时间             | 规范化的对话标题         |
-| project-document  | 项目  | 把共同理解沉淀为项目文档              | clarify 达成的共同理解              | 项目文档.md    |
+| project-document  | 项目  | 就项目整体达成共同理解并生成项目文档        | 用户的项目想法                      | 项目文档.md    |
 | project-tech      | 项目  | 完成技术选型                    | 项目文档.md                      | 技术栈.md     |
 | project-structure | 项目  | 确定项目结构                    | 项目文档.md、技术栈.md               | 项目结构.md    |
 | project-roadmap   | 项目  | 规划开发路线                    | 项目文档.md、技术栈.md、项目结构.md       | 开发路线图.md   |
